@@ -40,6 +40,10 @@ def main(new_width=100):
     ascii_image = "\n".join([new_image_data[index:(index+new_width)] for index in range(0, pixel_count, new_width)])
     print(ascii_image)
 
+    with open("ascii_image.txt","w") as f:
+     f.write(ascii_image)
+
+
 
 
 
